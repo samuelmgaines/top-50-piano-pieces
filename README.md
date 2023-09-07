@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Sam Gaines - Top 50 Piano Pieces Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+### Inspiration
+Being a pianist, I often get the question, "What are your top __ piano pieces?". I am always overwhelmed with this question, as there are so many pieces out there, and I don't know where to even start thinking about it. Luckily for me now though, I have created an application to help me find my top 50 piano pieces! The application supports including only piano solo works, only piano concerti, or both in the rankings.
 
-## Available Scripts
+### Pieces Included
+The set of pieces used in this application comes mostly from [TalkClassical](https://www.talkclassical.com/), an online forum for classical music discussion. Two threads specifically were created for users to share their favorite piano solo pieces and piano concerti, and a top 200 and top 100 list, respectively, were created based off of number of votes. The piano solo ranking can be found [here](https://www.talkclassical.com/threads/tc-top-200-recommended-solo-keyboard-works.14616/page-48) and the piano concerto ranking can be found [here](https://www.talkclassical.com/threads/the-tc-top-100-most-recommended-keyboard-concerti.12546/page-27). I felt some pieces were wrongfully excluded, so I took the liberty to add those. Some other pieces were removed for various reasons.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The backend of the application is hosted locally on a JSON server. The frontend of the application was created with React.js.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In the root directory of the application, run `npx json-server --watch data/db.json --port 8000` to start the JSON server. Then, run `npm start` to start the React application. From there, follow the instructions in the interface to find your top 50 piano pieces.
